@@ -1,0 +1,24 @@
+\customchapter[January 9, 2023]{Lecture 2: Grammer}
+	\begin{theorem}{}
+		$\left| uv \right| = \left| u \right| + \left| v \right|$.
+	\end{theorem}
+
+	\begin{proof}
+		We will use mathematical induction to prove this. \\
+		\textbf{Base case:} $\left| \lm v \right| = \left| v \right| = \left| \lm \right| + \left| v \right|$. \\
+		\textbf{Inductive step:} Assume $\left| uv \right| = \left| u \right| + \left| v \right|$. Then $\left| u'v \right| = \left| u' \right| + \left| v \right| = \left| u \right| + \left| v \right| + 1$. \\
+		Thus, $\left| uv \right| = \left| u'v \right| = \left| u \right| + \left| v \right| + 1 = \left| u \right| + \left| v \right|$. \\
+		Thus, $\left| uv \right| = \left| u \right| + \left| v \right|$.
+		\\ $\square$
+	\end{proof}
+
+	\section{Grammer}
+	\begin{definition}{Grammer}
+		A grammer $\bbG = \{\bbV, \bbT, \bbS, \bbP\}$ 
+		\begin{itemize}
+			\item $\bbV$ is finite set of objects called variables. 
+			\item $\bbT$ is finite st of objects called terminals. 
+			\item $\bbS \in \bbV$: special symbol called start variable 
+			\item $\bbP$ is a finite set of rules 
+		\end{itemize}
+	\end{definition}	

@@ -1,0 +1,10 @@
+/scripts
+/model
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+*.synctex(busy)
+*.out
