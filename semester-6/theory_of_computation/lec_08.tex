@@ -1,0 +1,32 @@
+\customchapter[23rd January]{Lecture 8: NFA to DFA Convergance}
+
+\begin{theorem}{}
+    The procedure \textbf{Mark} applicated to any DFA $M = \{\bbQ, \Sigma, \bbD, q_0, \bbF\}$ terminates and determines all pairs of distinguishable states.
+\end{theorem}
+
+\section{Procedure "Reduce"}
+
+Given DFA $M = \{\bbQ, \Sigma, \bbD, q_0, \bbF\}$ construct a reduces DFA $\hat{M} = \{ \hat{\bbQ}, \Sigma, \hat{\bbD}, \hat{q_o}, \hat{\bbF} \}$ as follows 
+
+\begin{itemize}
+    \item Use procedure "Mark" to generate equivalance classes. 
+    \item For each equivalance class $\{ q_1 \ldots q_k \} $ of indistinguishable states create a state with label $i_1 \ldots i_k$ for $\hat{\bbM}$
+    \item For each transition rule of $\bbM$ fo the form $\bbD(q_r, a) = q_s$, find the label $r \in \{i_1 \ldots i_k\}$ add rule $\hat{\bbD}(i_1 \ldots i_k, u) = j $ and $j_t \text{ in } \hat{\bbM}$. 
+    \item The initial state $\hat{q_0}$ is that state which contains 0, $q_0 \in \{q_1 \ldots q_k\}$
+    \item The $\hat{\bbF}$ will contain all those states, whose label contains the $q_i \in \bbF$ 
+\end{itemize}
+
+\begin{example}
+    Convert this using Procedure "Reduce"
+\end{example}
+
+\begin{figure}[!h]
+    \centering
+    \includegraphics[width=0.5\textwidth]{figures/default.png}
+    \caption{DFA}
+\end{figure}
+
+\begin{theorem}{}
+    Given any DFA $M = \{\bbQ, \Sigma, \bbD, q_0, \bbF\}$ the procedure "Reduce" produces another DFA $\hat{M}$ such that $L(M) = L(\hat{M})$.  Furthermore $\hat{\bbM}$ is minimal in the sense that there is no DFA with less number of states than in $\hat{M}$, which accepts $L(M)$
+\end{theorem}
+

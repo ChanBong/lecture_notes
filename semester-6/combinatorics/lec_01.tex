@@ -1,0 +1,37 @@
+\customchapter[23rd January, 2023]{Lecture 8: Introduction}
+	
+% TODO : Equation numbering
+
+\section{Examples on Generating Functions}
+
+\begin{itemize}
+	\item $\left( 1-x \right)^{-r} = \sum_{n=0}^{\infty} \binom{r+n-1}{r-1} x^n$
+	\item $G_a(x) = \sum_{n=0}^{\infty} a_n x^m$ is generating function for $\{a_n\} $
+\end{itemize}
+
+\begin{example}
+	Find the generatign function for $a_n = \binom{n}{2} = \frac{n(n-1)}{2}$ \\ 
+	$ a_n = \frac{1}{2}[b_n - c_n] ; b_n = n^2, c_n = n$
+\end{example}
+
+\begin{theorem}{ Addition and Multiplication of GF}
+
+\end{theorem} 
+
+Given sequence $\{a_n\}$, $\{b_n\}$ and their generating functions $G_a(x) = \sum_{n=0}^{\infty} a_n x^m$ and $G_a(x) = \sum_{n=0}^{\infty} b_n x^m$ 
+\begin{itemize}
+	\item Addition \\ $G_a + G_b = \sum_{n=0}^{\infty} (a_n + b_n) x^m$
+	\item Multiplication \\ $G_a * G_b = \sum_{n=0}^{\infty} (c_n) x^m$, where $c_n = \sum_{k=0}^{n} a_k b_{n-k}$
+\end{itemize}
+
+\begin{example}
+	\begin{itemize}
+		\item Do the examples in class. 
+	\end{itemize}
+\end{example}
+
+\begin{definition}{Triangular Numbers}
+	$T_n = 1 + 2 + \ldots + n = \binom{n+1}{2} ; n \geq 1$  
+\end{definition}
+
+
